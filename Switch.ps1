@@ -1,4 +1,6 @@
-﻿Switch ($Status) {
+$Status = 3
+
+Switch ($Status) {
     0 {$status_text = "ok" }
     1 {$status_text = "error" }
     2 {$status_text = "jammed" }
@@ -6,3 +8,5 @@
     4 {$status_text = "empty" }
     default {$status_text = "unknown" }
 }
+
+$status_text
